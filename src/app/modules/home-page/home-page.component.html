@@ -1,0 +1,94 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <!-- <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button> -->
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+    
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/homepage']">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/albumpage']">Albums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/users']">Users</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+       
+  
+        <!-- Notifications -->
+       
+      </div>
+      <div class="fr" style="margin-left: auto">
+        <div class="fr itms-c" style="margin-right: 50px">
+          <span
+            class="icon-badge-container c-ptr"
+            [routerLink]="['/notifications']"
+          >
+            <!-- <mat-icon
+              svgIcon="notification"
+              style="color: #3543db"
+              [matBadge]="notificationCount"
+              matBadgeColor="warn"
+            >
+            </mat-icon> -->
+          </span>
+        </div>
+        <div>
+          <!-- <div [matMenuTriggerFor]="menu" class="fr itms-c c-ptr">
+            <div style="margin-right: 21px">
+              <span *ngIf="user"
+                ><b>{{ user.firstName }} {{ user.lastName }}</b></span
+              >
+            </div>
+            <img
+              *ngIf="user.mediaId != null"
+              [src]="imageUrl"
+              id="avatar"
+              alt="User Name"
+            />
+            <div
+              *ngIf="user.mediaId == null"
+              id="avatar"
+              class="fr-c itms-c"
+              #second
+            >
+              {{ initials }}
+            </div>
+          </div> -->
+          <!-- <mat-menu #menu="matMenu">
+            <span *ngIf="isMerchant" mat-menu-item [routerLink]="['/settings']"
+              >Profile</span
+            >
+            <span mat-menu-item (click)="logout()">Logout</span>
+          </mat-menu> -->
+        </div>
+      </div>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->

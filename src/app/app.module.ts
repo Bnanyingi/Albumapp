@@ -7,17 +7,27 @@ import { AppComponent } from './app.component';
 import { LandPageComponent } from './modules/land-page/land-page.component';
 import { LoginPageComponent } from './modules/login-page/login-page.component';
 import { SignupPageComponent } from './modules/signup-page/signup-page.component';
+import { HomePageComponent } from './modules/home-page/home-page.component';
+import { MaterialModule } from 'src/app/material/material.module';
+// import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+// import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandPageComponent,
     LoginPageComponent,
-    SignupPageComponent
+    SignupPageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    
+    // MatIconModule 
+
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]

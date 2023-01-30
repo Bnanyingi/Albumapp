@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { SignupPageComponent } from '../signup-page/signup-page.component';
+
 
 @Component({
   selector: 'app-land-page',
@@ -7,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+
 
 }
