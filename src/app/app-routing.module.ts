@@ -6,6 +6,8 @@ import { SignupPageComponent } from './modules/signup-page/signup-page.component
 import { HomePageComponent } from './modules/home-page/home-page.component';
 import {UserPageComponent} from './modules/user-page/user-page.component';
 import { AlbumPageComponent } from './modules/album-page/album-page.component'
+import { PhotoPageComponent } from './modules/photo-page/photo-page.component';
+
 
 const routes: Routes = [
   { 
@@ -35,6 +37,13 @@ const routes: Routes = [
     path: 'albumpage', 
     component: AlbumPageComponent
   },
+
+  { 
+    path: 'photos', 
+    component: PhotoPageComponent
+  },
+
+
 
 
 
